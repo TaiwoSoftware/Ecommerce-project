@@ -1,8 +1,5 @@
 import StyledDiv from "../StyledDiv";
 import hangedCloths from "../images/hangedCloths.jpg";
-import pant from "../images/pant-trouser.jpg";
-import jacket from "../images/jacket.jpg";
-import brownPant from "../images/brown-pants.jpg";
 import designer from "../images/designer.jpg";
 import ImageLayout from "../ImageLayout";
 import { Link } from "react-router-dom";
