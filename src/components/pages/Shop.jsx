@@ -31,7 +31,7 @@ function Shop() {
           {data &&
             data.map((item) => (
               <div key={item.id}>
-                <img src={item.image} alt="product image" />
+                <img src={item.image} alt={`Product: ${item.title}`} />
                 <div className="productMainDetails">
                   <p>{item.title}</p>
                   <p>{item.price}</p>
