@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes comeLeft {
+  0% {
+    transform: translateX(-240px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes comeRight {
+  0% {
+    transform: translateX(240px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes fromTop {
+  0% {
+    transform: translateY(-540px);
+    opacity: 1%;
+  }
+  50% {
+    opacity: 5%;
+  }
+  60% {
+    opacity: 7%;
+  }
+  90% {
+    opacity: 8%;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+html {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 1s;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+li a:active {
+  color: red;
+}
+
+header button {
+  background: orangered;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  border-radius: 0.2rem;
+  box-shadow: 3px 3px 3px black;
+}
+
+.home {
+  box-sizing: border-box;
+}
+
+.home img {
+  width: 100%;
+}
+
+.mainBodyImage {
+  padding: 2rem;
+  border: 1px solid black;
+}
+
+.allBody {
+  padding: 2rem 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 50% 50%;
+}
+
+.mainDetails {
+  padding: 2rem;
+  text-align: justify;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.secondDiv {
+  animation: fromTop 5s;
+}
+
+.rounded {
+  background: rgba(255, 68, 0, 0.689);
+  width: 15%;
+  padding: 14rem 2rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0 15rem 15rem 0;
+  margin-top: 3rem;
+  animation: comeLeft 3s;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.third {
+  background: rgba(255, 68, 0, 0.689);
+  width: 15%;
+  padding: 14rem 2rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 15rem 0 0 15rem;
+  margin-top: 3rem;
+  animation: comeRight 5s;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.secondDiv h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.secondDiv p {
+  text-align: center;
+}
+
+.mainHeader {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9rem;
+}
+
+.firstBatch {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.SecondBatch {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.new {
+  background-color: red;
+  color: #fff;
+  width: 40%;
+  margin-left: 3rem;
+  transform: skewX(50deg) skewY(-23deg) translateX(-9rem);
+}
+
+.productContainer {
+  margin-top: 3rem;
+  padding: 3rem;
+}
+
+.secondProduct {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.mainImage img {
+  width: 100%;
+}
+
+.mainImage {
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.mainImage:hover {
+  border: 1px solid black;
+}
+
+.new p {
+  text-align: center;
+}
+
+.priceTag {
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem;
+  margin-top: 0.3rem;
+  color: #fff;
+  font-weight: 600;
+  width: 80%;
+  border-radius: 0.2rem;
+  margin-left: 2rem;
+}
+
+.visit p {
+  text-align: center;
+}
+
+.visit button {
+  margin-top: 5rem;
+  padding: 0.5rem 9rem;
+  border: none;
+  background: orangered;
+  color: #fff;
+  border-radius: 0.2rem;
+  box-shadow: 3px 3px 3px black;
+  cursor: pointer;
+}
+
+.Sign {
+  margin-top: 7rem;
+  max-width: 500px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Sign h2 {
+  text-align: center;
+  color: red;
+}
+
+form {
+  border: 1px solid black;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  border-bottom: 1px solid black;
+}
+
+form input:active {
+  border-bottom: 2px solid red;
+}
+
+form input:focus {
+  border-bottom: 2px solid red;
+}
+
+form p {
+  text-align: center;
+}
+
+form button {
+  padding: 0.5rem 9rem;
+  background: orangered;
+  color: #fff;
+  border-radius: 0.2rem;
+  box-shadow: 3px 3px 3px black;
+  cursor: pointer;
+}
+
+.allProduct {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-left: 7rem;
+}
+
+.mainProductHeader {
+  margin-bottom: 4rem;
+}
+
+.mainProduct h1 {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.mainProduct p {
+  text-align: center;
+}
+
+.allProduct img {
+  width: 50%;
+  margin-left: 8rem;
+}
+
+.productMainDetails {
+  padding: 2rem;
+}/*# sourceMappingURL=styles.css.map */

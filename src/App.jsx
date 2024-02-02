@@ -1,0 +1,64 @@
+import React from "react";
+import "./styles.css";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./components/pages/Home";
+import Shop from "./components/pages/Shop";
+import Cart from "./components/pages/Cart";
+import About from "./components/pages/About";
+import Error from "./components/pages/Error";
+import Search from "./components/pages/Search";
+import SignIn from "./components/pages/SignIn";
+import LogIn from "./components/LogIn";
+function App() {
+  return (
+    <main>
+      <Router>
+        <header>
+          <h1>Dresser-Glam</h1>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/cart">Cart</Link>
+              </li>
+              <li>
+                <Link to="/shop">Shop</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to='/search'>Search</Link>
+              </li>
+            </ul>
+          </nav>
+          <div className="buttons">
+            <Link to='/sign'>
+            <button>Sign up</button>
+            </Link>
+            <Link to='/login'>
+            <button>Log in</button>
+            </Link>
+          </div>
+          
+        </header>
+        <hr />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/search" element={<Search />} />
+          <Route path='/sign' element={<SignIn />} />
+          <Route path='/login' element={<LogIn />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </Router>
+      
+    </main>
+  );
+}
+
+export default App;
