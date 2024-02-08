@@ -150,7 +150,6 @@ header button {
   font-weight: 600;
   font-size: 1rem;
   border-radius: 15rem 0 0 15rem;
-
   margin-top: 3rem;
   animation: comeRight 5s;
   animation-direction: alternate;
@@ -192,6 +191,14 @@ header button {
   transform: skewX(50deg) skewY(-23deg) translateX(-9rem);
 }
 
+.old {
+  display: none;
+}
+
+.homeGrid {
+  margin-bottom: 3rem;
+}
+
 .productContainer {
   margin-top: 3rem;
   padding: 3rem;
@@ -231,18 +238,17 @@ header button {
   margin-left: 2rem;
 }
 
-
 .visit p {
   text-align: center;
 }
 
 .visit button {
   margin-top: 5rem;
-  padding: .5rem 9rem;
+  padding: 0.5rem 9rem;
   border: none;
   background: orangered;
   color: #fff;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   box-shadow: 3px 3px 3px black;
   cursor: pointer;
 }
@@ -269,18 +275,17 @@ form {
   margin-bottom: 2rem;
 }
 
-form input{
+form input {
   display: block;
   width: 100%;
   padding: 1rem 2rem;
-  box-sizing: border-box;
   margin-bottom: 2rem;
   outline: none;
   border: none;
   font-size: 1rem;
   border-bottom: 1px solid black;
+  box-sizing: border-box;
 }
-
 
 form input:active {
   border-bottom: 2px solid red;
@@ -295,22 +300,22 @@ form p {
 }
 
 form button {
-  padding: .5rem 9rem;
+  padding: 0.5rem 9rem;
   background: orangered;
   color: #fff;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   box-shadow: 3px 3px 3px black;
   cursor: pointer;
 }
 
-.allProduct{
-  display:grid;
-  grid-template-columns: 1fr 1fr ;
+.allProduct {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-left: 7rem;
 }
 
-.mainProductHeader{
+.mainProductHeader {
   margin-bottom: 4rem;
 }
 
@@ -320,7 +325,7 @@ form button {
   // margin-bottom: 4rem;
 }
 
-.mainProduct p{
+.mainProduct p {
   text-align: center;
 }
 
@@ -331,4 +336,160 @@ form button {
 
 .productMainDetails {
   padding: 2rem;
+}
+
+.cartDetails {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.cartDetails p {
+  font-style: italic;
+}
+
+.menu {
+  display: block;
+  cursor: pointer;
+}
+
+.times {
+  font-size: 3rem;
+  margin-top: -1rem;
+  cursor: pointer;
+}
+
+.layer {
+  background-color: black;
+  padding: 0.09rem 1rem;
+  margin-bottom: 0.2rem;
+  border-radius: 3rem;
+}
+
+.semiMenu {
+  display: none;
+}
+
+.allMenu {
+  display: none;
+  transition: all 4s;
+}
+
+.menuContainer {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 5rem;
+}
+
+.mainContainer {
+  padding: 0.5rem;
+  background-color: #b3b3b3;
+  border-radius: 0.5rem;
+}
+
+.containerNav {
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.containerNav p {
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.containerNav div {
+  display: block;
+  background-color: orangered;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1170px) {
+  .rounded {
+    display: none;
+  }
+
+  .third {
+    display: none;
+  }
+
+  .mainHeader {
+    display: block;
+  }
+
+  .secondDiv {
+    margin-top: 6rem;
+  }
+
+  nav {
+    display: none;
+  }
+  .buttons {
+    display: none;
+  }
+
+  .new {
+    display: none;
+  }
+
+  .allMenu,
+  .menuContainer,
+  .semiMenu {
+    display: block;
+  }
+
+  .firstBatch {
+    grid-template-columns: 100%;
+    margin-top: 4rem;
+  }
+
+  .comma,
+  .semiColon,
+  .priceTag {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .SecondBatch {
+    grid-template-columns: 100%;
+  }
+  .clothDesigner {
+    display: none;
+  }
+
+  .gallery h1,
+  p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 590px) {
+  form {
+    max-width: 500px;
+    width: 80%;
+    margin-left: 3rem;
+    box-sizing: border-box;
+  }
+
+  form button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: -1.2rem;
+  }
+  .secondDiv {
+    animation: none;
+  }
+  .secondDiv h1 {
+    font-size: 1rem;
+  }
 }

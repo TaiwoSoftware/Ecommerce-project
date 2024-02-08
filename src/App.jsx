@@ -9,6 +9,7 @@ import Error from "./components/pages/Error";
 import Search from "./components/pages/Search";
 import SignIn from "./components/pages/SignIn";
 import LogIn from "./components/LogIn";
+import Hamburger from "./components/Hamburger";
 function App() {
   return (
     <main>
@@ -30,19 +31,19 @@ function App() {
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to='/search'>Search</Link>
+                <Link to="/search">Search</Link>
               </li>
             </ul>
           </nav>
           <div className="buttons">
-            <Link to='/sign'>
-            <button>Sign up</button>
+            <Link to="/sign">
+              <button>Sign up</button>
             </Link>
-            <Link to='/login'>
-            <button>Log in</button>
+            <Link to="/login">
+              <button>Log in</button>
             </Link>
           </div>
-          
+          <Hamburger  />
         </header>
         <hr />
         <Routes>
@@ -51,12 +52,11 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/about" element={<About />} />
           <Route path="/search" element={<Search />} />
-          <Route path='/sign' element={<SignIn />} />
-          <Route path='/login' element={<LogIn />} />
+          <Route path="/sign" element={<SignIn />} />
+          <Route path="/login" element={<LogIn />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
-      
     </main>
   );
 }

@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function SignIn() {
+  const navigate = useNavigate();
+  const handleClick = (e) => {
+    e.preventDefault();
+    navigate("/login");
+  };
   return (
     <div className="Sign">
       <h2>Create An Account</h2>
@@ -15,9 +21,11 @@ function SignIn() {
         <input type="tel" required id="tel" placeholder="your phone number" />
         <input type="text" required id="address" placeholder="House Address" />
         <input type="text" required id="country" placeholder="your country" />
-        <input type="password"  id="password" placeholder="password" />
-        <p>
-          <button type="submit">Continue</button>
+        <input type="password" id="password" placeholder="password" />
+        <p className="buttonP">
+          <button onClick={handleClick} type="submit">
+            Continue
+          </button>
         </p>
       </form>
     </div>

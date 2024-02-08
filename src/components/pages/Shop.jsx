@@ -14,7 +14,7 @@ function Shop() {
         const result = await response.json();
         setData(result);
       } catch (error) {
-        console.log(error);
+        alert("Check your connection");
       }
     };
 
@@ -35,11 +35,12 @@ function Shop() {
                 <div className="productMainDetails">
                   <p>{item.title}</p>
                   <p>{item.price}</p>
+                  <button>Add to cart</button>
                 </div>
-                {/* <p>{item.description}</p> */}
               </div>
             ))}
         </div>
+        {}
       </div>
     </>
   );

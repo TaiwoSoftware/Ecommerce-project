@@ -1,6 +1,6 @@
 function ImageLayout({ src, alt, tag, name,late }) {
   return (
-    <div>
+    <div className="homeGrid">
       <div className={late}>
         <p>New</p>
       </div>

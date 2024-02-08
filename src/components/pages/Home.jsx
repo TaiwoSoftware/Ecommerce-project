@@ -19,22 +19,26 @@ function Home() {
             alt="Collection of clothes"
             tag="$100 for each"
             name="Jackson Shirts"
-            late='new'
+            late="new"
           />
-          <ImageLayout
-            src={hangedCloths}
-            alt="Collection of clothes"
-            tag="$100 for each"
-            name="Jackson Shirts"
-            late='new'
-          />
-          <ImageLayout
-            src={hangedCloths}
-            alt="Collection of clothes"
-            tag="$100 for each"
-            name="Jackson Shirts"
-            late='new'
-          />
+          <div className="comma">
+            <ImageLayout
+              src={hangedCloths}
+              alt="Collection of clothes"
+              tag="$100 for each"
+              name="Jackson Shirts"
+              late="new"
+            />
+          </div>
+          <div className="semiColon">
+            <ImageLayout
+              src={hangedCloths}
+              alt="Collection of clothes"
+              tag="$100 for each"
+              name="Jackson Shirts"
+              late="new"
+            />
+          </div>
         </div>
         <div className="SecondBatch">
           <ImageLayout
@@ -42,16 +46,17 @@ function Home() {
             alt="Collection of clothes"
             tag="$200 "
             name="Designer Shirts"
-            late='old'
-            
+            late="old"
           />
-          <ImageLayout
-            src={designer}
-            alt="Collection of clothes"
-            tag="$200"
-            name="Designer Shirts"
-            late='old'
-          />
+          <div className="clothDesigner">
+            <ImageLayout
+              src={designer}
+              alt="Collection of clothes"
+              tag="$200"
+              name="Designer Shirts"
+              late="old"
+            />
+          </div>
         </div>
         <div className="visit">
           <p>
