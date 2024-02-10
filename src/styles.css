@@ -477,6 +477,9 @@ p {
   .rounded {
     display: none;
   }
+  .AboutDetails {
+    padding: 2rem;
+  }
   .third {
     display: none;
   }
