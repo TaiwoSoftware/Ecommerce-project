@@ -382,14 +382,14 @@ form button {
 }
 
 .mainContainer {
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: #b3b3b3;
   border-radius: 0.5rem;
 }
 
 .containerNav {
   display: block;
-  max-width: 500px;
+  max-width: 1000px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -397,6 +397,8 @@ form button {
 .containerNav p {
   color: #fff;
   text-align: center;
+  font-size: 2rem;
+  margin-top: 0.5rem;
   cursor: pointer;
 }
 
@@ -404,13 +406,73 @@ form button {
   display: block;
   background-color: orangered;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 3rem;
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 0.5rem;
   margin-top: 0.2rem;
   border-radius: 0.2rem;
+  font-size: 1.5rem;
   cursor: pointer;
+}
+
+// About design Interface
+.aboutHeader {
+  margin-top: 3rem;
+}
+.aboutHeader h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.aboutHeader p {
+  text-align: center;
+}
+
+.AboutDetails {
+  margin-top: 1rem;
+}
+
+.AboutDetails p {
+  text-align: justify;
+}
+
+.aboutComponent {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+// Designing The search feature
+.SearchComps {
+  margin-top: 2rem;
+}
+.searchHeader h3,
+p {
+  text-align: center;
+}
+.searchDetails input {
+  width: 50%;
+  margin-top: 4rem;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.searchDetails input::placeholder {
+  text-align: center;
+}
+.searchDetails button {
+  padding: 0.5rem;
+  margin-left: 1rem;
+  background: orangered;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border: none;
+  box-shadow: 3px 3px 1px rgb(69, 69, 69);
+  border-radius: 0.3rem;
 }
 
 @media (max-width: 1170px) {
