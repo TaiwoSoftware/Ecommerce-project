@@ -35,7 +35,9 @@ function Shop() {
                 <div className="productMainDetails">
                   <p>{item.title}</p>
                   <p>{item.price}</p>
-                  <button>Add to cart</button>
+                  <p className="cartButton">
+                    <button>Add to cart</button>
+                  </p>
                 </div>
               </div>
             ))}

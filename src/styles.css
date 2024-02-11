@@ -307,6 +307,16 @@ form button {
   margin-left: 7rem;
 }
 
+.cartButton button {
+  border: none;
+  padding: 0.5rem 2rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  background-color: orangered;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px solid black;
+}
+
 .mainProductHeader {
   margin-bottom: 4rem;
 }
@@ -514,6 +524,11 @@ p {
   }
 }
 @media (max-width: 650px) {
+  .allProduct {
+    grid-template-columns: 100%;
+    width: 100%;
+    margin: 0;
+  }
   .SecondBatch {
     grid-template-columns: 100%;
   }
