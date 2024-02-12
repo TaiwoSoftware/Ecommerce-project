@@ -481,6 +481,13 @@ p {
   border: none;
   box-shadow: 3px 3px 1px rgb(69, 69, 69);
   border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.cartNumber p {
+  position: absolute;
+  transform: translateX(2.3rem) translateY(-1.1rem);
+  color: red;
 }
 
 @media (max-width: 1170px) {

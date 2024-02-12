@@ -4,12 +4,12 @@ function AboutDetails() {
   return (
     <div className="AboutDetails">
       <p>
-        This project was task by <i>Intern career</i> internship to work on
+        This project is part of the task given to me by <i>Intern career</i> internship to work on
         e-commerce website using react.
       </p>
       <p>
-        Developed this beautiful project to <b>Dresser-Glam</b> as an e-commerce
-        website so the price of product are true 🤣🤣🤣. sorry about that
+        Developed this beautiful project <b>Dresser-Glam</b> an e-commerce
+        website, the price of products are true 🤣🤣🤣. sorry about that
       </p>
       <p>
         This project is a personal project to improve myself on Reactjs and to

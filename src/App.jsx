@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/pages/Home";
@@ -10,7 +10,10 @@ import Search from "./components/pages/Search";
 import SignIn from "./components/pages/SignIn";
 import LogIn from "./components/LogIn";
 import Hamburger from "./components/Hamburger";
+import AddToCart from "./components/pages/AddToCart";
 function App() {
+  const [cartCount, setCartCount] = useState(0);
+
   return (
     <main>
       <Router>
@@ -21,9 +24,14 @@ function App() {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li>
-                <Link to="/cart">Cart</Link>
-              </li>
+              <span className="cartContainer">
+                <li className="cartNumber">
+                  <Link to="/cart">Cart</Link>
+                  <AddToCart 
+                    cartCount={cartCount}
+                  />
+                </li>
+              </span>
               <li>
                 <Link to="/shop">Shop</Link>
               </li>
@@ -43,12 +51,21 @@ function App() {
               <button>Log in</button>
             </Link>
           </div>
-          <Hamburger  />
+          <Hamburger />
         </header>
         <hr />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/shop" element={<Shop />} />
+          <Route
+            path="/shop"
+            element={
+              <Shop
+                handleClick={() => {
+                  setCartCount(cartCount + 1);
+                }}
+              />
+            }
+          />
           <Route path="/cart" element={<Cart />} />
           <Route path="/about" element={<About />} />
           <Route path="/search" element={<Search />} />
