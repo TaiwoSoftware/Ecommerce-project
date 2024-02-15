@@ -14,7 +14,7 @@ function Shop({ handleClick }) {
         const result = await response.json();
         setData(result);
       } catch (error) {
-        // alert("Check your connection");
+        alert("Check your connection");
       }
     };
 

@@ -27,9 +27,15 @@ function App() {
               <span className="cartContainer">
                 <li className="cartNumber">
                   <Link to="/cart">Cart</Link>
-                  <AddToCart 
-                    cartCount={cartCount}
-                  />
+                  {cartCount === 0 ? (
+                    <div className="isZero">
+                      <AddToCart cartCount={cartCount} />
+                    </div>
+                  ) : (
+                    <div className="isOne">
+                      <AddToCart cartCount={cartCount} />
+                    </div>
+                  )}
                 </li>
               </span>
               <li>
@@ -60,7 +66,8 @@ function App() {
             path="/shop"
             element={
               <Shop
-                handleClick={() => {
+                handleClick={(e) => {
+                  console.log(e.target);
                   setCartCount(cartCount + 1);
                 }}
               />

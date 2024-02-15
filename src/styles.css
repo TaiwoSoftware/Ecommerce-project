@@ -417,6 +417,14 @@ form button {
   cursor: pointer;
 }
 
+.isZero {
+  visibility: hidden;
+}
+
+.isOne {
+  visibility: visible;
+}
+
 .aboutHeader {
   margin-top: 3rem;
 }
