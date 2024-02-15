@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function Shop({handleClick}) {
+function Shop({ handleClick }) {
   const [data, setData] = useState(null);
   useEffect(() => {
     const fetchData = async () => {
@@ -27,7 +27,6 @@ function Shop({handleClick}) {
           <h1>Welcome to our store</h1>
           <p>All price is in dollars</p>
         </div>
-        <button onClick={handleClick}>Add cart</button>
         <div className="allProduct">
           {data &&
             data.map((item) => (
@@ -37,7 +36,7 @@ function Shop({handleClick}) {
                   <p>{item.title}</p>
                   <p>{item.price}</p>
                   <p className="cartButton">
-                    <button >Add to cart</button>
+                    <button onClick={handleClick}>Add to cart</button>
                   </p>
                 </div>
               </div>
