@@ -18,7 +18,9 @@ function App() {
     <main>
       <Router>
         <header>
-          <h1>Dresser-Glam</h1>
+          <h1>
+            <Link to="/">Dresser-Glam</Link>
+          </h1>
           <nav>
             <ul>
               <li>

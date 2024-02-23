@@ -1,19 +1,17 @@
-import React from 'react'
-
+import SignUpForm from "./auth/SignUpForm";
 function LogIn() {
   return (
     <div className="Sign">
       <h2>Log into your Account</h2>
       <form>
-        
-        <input type="email" required id="email" placeholder="your Email" />
-        <input type="password"  id="password" placeholder="password" />
+        <SignUpForm type="email" placeholder="email address" />
+        <SignUpForm type="password" placeholder="password" />
         <p>
           <button type="submit">Log in</button>
         </p>
       </form>
     </div>
-  )
+  );
 }
 
-export default LogIn
+export default LogIn;

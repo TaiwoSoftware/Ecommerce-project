@@ -63,6 +63,10 @@ header {
   align-items: center;
   padding: 1rem 1rem;
 }
+header h1 a{
+  color: #000;
+  text-decoration: none;
+}
 
 li {
   list-style: none;
@@ -425,10 +429,10 @@ form button {
   font-size: 1.5rem;
   cursor: pointer;
 }
-.isZero{
+.isZero {
   visibility: hidden;
 }
-.isOne{
+.isOne {
   visibility: visible;
 }
 
@@ -480,9 +484,8 @@ p {
 .searchDetails input::placeholder {
   text-align: center;
 }
-.searchDetails button {
-  padding: 0.5rem;
-  margin-left: 1rem;
+.submitButton {
+  padding: 3rem;
   background: orangered;
   color: #fff;
   padding: 0.5rem 2rem;

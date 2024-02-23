@@ -55,6 +55,11 @@ header {
   padding: 1rem 1rem;
 }
 
+header h1 a {
+  color: #000;
+  text-decoration: none;
+}
+
 li {
   list-style: none;
   display: inline-block;
@@ -480,9 +485,8 @@ p {
   text-align: center;
 }
 
-.searchDetails button {
-  padding: 0.5rem;
-  margin-left: 1rem;
+.submitButton {
+  padding: 3rem;
   background: orangered;
   color: #fff;
   padding: 0.5rem 2rem;
