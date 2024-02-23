@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 function Shop({ handleClick }) {
+  
+
   const [data, setData] = useState(null);
   useEffect(() => {
     const fetchData = async () => {

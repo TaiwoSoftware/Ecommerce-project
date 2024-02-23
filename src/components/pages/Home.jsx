@@ -2,7 +2,7 @@ import StyledDiv from "../StyledDiv";
 import hangedCloths from "../images/hangedCloths.jpg";
 import designer from "../images/designer.jpg";
 import ImageLayout from "../ImageLayout";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 function Home() {
   return (
     <div className="home">
