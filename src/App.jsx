@@ -11,6 +11,7 @@ import SignIn from "./components/pages/SignIn";
 import LogIn from "./components/LogIn";
 import Hamburger from "./components/Hamburger";
 import AddToCart from "./components/pages/AddToCart";
+import ProductDetails from "./components/pages/ProductDetails";
 function App() {
   const [cartCount, setCartCount] = useState(0);
 
@@ -79,6 +80,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/search" element={<Search />} />
           <Route path="/sign" element={<SignIn />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="*" element={<Error />} />
         </Routes>
